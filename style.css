@@ -199,3 +199,21 @@ i {
     font-weight: 300;
     color: #EB4D4D;
 }
+
+.set-winner {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    color: #555;
+    font-size: 18px;
+    font-family: 'Lato';
+    text-align: center;
+    padding: 10px;
+    width: 180px;
+    text-transform: uppercase;
+}
+
+.set-winner:focus {
+    outline: none;
+}

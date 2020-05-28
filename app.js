@@ -5,7 +5,7 @@ newGame();
 function newGame() {
     playerScore = 0;
     computerScore = 0;
-    winningScore = 10;
+
 
     document.querySelector('.player-selection').textContent = '';
     document.querySelector('.computer-selection').textContent = '';
@@ -21,7 +21,7 @@ function newGame() {
 
     gamePlaying = true;
 
-}
+};
 
 function getWinner() {
     if (playerScore >= winningScore || computerScore >= winningScore) {
@@ -32,10 +32,10 @@ function getWinner() {
         } else {
             document.querySelector('.computer-name').textContent = 'Winner!';
             document.querySelector('.computer-panel').classList.add('winner');
-        }
+        };
         gamePlaying = false;
-    }
-}
+    };
+};
 
 function computerPlay() {
     comp = Math.floor((Math.random() * 3) + 1);
@@ -49,7 +49,7 @@ function computerPlay() {
     } else {
         document.querySelector('.computer-selection').textContent = 'Paper';
     };
-}
+};
 
 function rock() {
     if (gamePlaying === true) {
@@ -72,8 +72,11 @@ function rock() {
             document.querySelector('.computer-score').textContent = computerScore;
         };
     };
+    winningScore = document.querySelector('.set-winner').value;
+    winningScore ? winningScore = winningScore : winningScore = 10;
+
     getWinner();
-}
+};
 
 function paper() {
     if (gamePlaying === true) {
@@ -96,8 +99,11 @@ function paper() {
             document.querySelector('.computer-score').textContent = computerScore;
         };
     };
+    winningScore = document.querySelector('.set-winner').value;
+    winningScore ? winningScore = winningScore : winningScore = 10;
+
     getWinner();
-}
+};
 
 function scissors() {
     if (gamePlaying === true) {
@@ -120,9 +126,12 @@ function scissors() {
             document.querySelector('.player-score').textContent = playerScore;
             document.querySelector('.computer-score').textContent = computerScore;
         };
-    }
+    };
+    winningScore = document.querySelector('.set-winner').value;
+    winningScore ? winningScore = winningScore : winningScore = 10;
+
     getWinner();
-}
+};
 
 
 document.querySelector('.btn-rock').addEventListener('click', rock);

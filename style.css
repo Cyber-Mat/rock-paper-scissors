@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: turquoise;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    font-family: Lato;
+    font-weight: 300;
+    height: 100vh;
+}
+
+.container {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+.player-panel,
+.computer-panel {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}

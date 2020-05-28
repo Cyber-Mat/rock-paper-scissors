@@ -10,24 +10,29 @@
 </head>
 
 <body>
-    <div class="container">
-
+    <div class="container clearfix">
         <div class="player-panel">
             <div class="player-name">Player</div>
             <div class="player-score">0</div>
-            <div class="player-selection">Rock</div>
+            <div class="player-selection-box">
+                <div class="player-selection-label">Current</div>
+                <div class="player-selection" id="current-0">Paper</div>
+            </div>
         </div>
 
         <div class="computer-panel">
-            <div class="computer-name">Player</div>
+            <div class="computer-name">Computer</div>
             <div class="computer-score">0</div>
-            <div class="computer-selection">Rock</div>
+            <div class="computer-selection-box">
+                <div class="computer-selection-label">Current</div>
+                <div class="computer-selection" id="current-0">Rock</div>
+            </div>
         </div>
 
         <button class="btn-new"><i class=""></i>New Game</button>
 
         <img class="player-hand" src="rock.png" alt="player hand">
-        <img class="computer-hand" src="paper.png" alt="computer selection">
+        <img class="computer-hand" src="2.png" alt="computer selection">
 
         <button class="btn-rock">ROCK</button>
         <button class="btn-paper">PAPER</button>
